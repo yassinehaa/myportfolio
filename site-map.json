@@ -1,0 +1,228 @@
+{
+  "siteMetadata": {
+    "title": "Yassine Hanini | Full-Stack Developer",
+    "owner": {
+      "fullName": "Yassine Hanini",
+      "displayName": "Yassine",
+      "profession": "Full-Stack Developer",
+      "specialties": [
+        "Backend Development",
+        "Web Development",
+        "Mobile Application Development"
+      ],
+      "location": "Béni Mellal, Morocco",
+      "email": "hayassine0@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/yassineha",
+      "github": "https://github.com/yassinehaa",
+      "referenceWebsite": "https://touquirakhtar.com/"
+    },
+    "visualIdentity": {
+      "style": "Cinematic minimal, editorial, refined typography",
+      "colorPalette": {
+        "background": "#090909",
+        "primaryText": "#f2efeb",
+        "accent": "#e32b3c",
+        "mutedText": "#a09c9a",
+        "surface": "#141414",
+        "surfaceHover": "#1c1c1c",
+        "border": "#222222"
+      },
+      "typography": {
+        "display": "Anton",
+        "body": "Manrope",
+        "accent": "Caveat"
+      },
+      "theme": "dark",
+      "animationIntensity": "balanced"
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "description": "Cinematic split headline with Anton display font, editorial portrait, short intro, and dual CTA buttons with spring scaling.",
+      "interactiveElements": [
+        "Contact Me CTA (smooth scroll to #contact)",
+        "View Projects CTA (smooth scroll to #projects)",
+        "Resume Quick View trigger",
+        "Authentic Portrait with 3D cursor tilt, dynamic glass sheen glare, and fullscreen zoom lightbox"
+      ],
+      "animations": [
+        "Split word-by-word slide-up entrance",
+        "Subtitle fade-in",
+        "Spring button scale (from 0.95)",
+        "Interactive 3D perspective tilt (clamped to ±7°)",
+        "Cursor dynamic light sheen reflection tracking",
+        "Reticle camera focus viewfinder brackets on hover"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About Journey & Philosophy",
+      "description": "Authentic narrative of software engineering journey, backend focus (Java & Spring Boot), architecture principles, and problem-solving methodology.",
+      "interactiveElements": [
+        "Location badge (Béni Mellal, Morocco)",
+        "Verified career credentials indicator"
+      ],
+      "animations": [
+        "Scroll reveal up with ease-out-expo",
+        "Staggered text blocks"
+      ]
+    },
+    {
+      "id": "skills",
+      "name": "Technical Stack & Capabilities",
+      "description": "Categorized stack breakdown: Backend & Architecture, Frontend, Mobile, and DevOps & Databases.",
+      "categories": [
+        {
+          "name": "Backend & Core",
+          "items": ["Java", "Spring Boot", "REST APIs", "JWT Auth", "Node.js", "Express.js"]
+        },
+        {
+          "name": "Frontend & Web",
+          "items": ["Angular", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5/CSS3"]
+        },
+        {
+          "name": "Mobile Development",
+          "items": ["React Native", "Expo", "Cross-Platform UI", "Mobile Navigation"]
+        },
+        {
+          "name": "Data & DevOps",
+          "items": ["MySQL", "SQLite", "Docker", "Git", "GitHub"]
+        }
+      ],
+      "interactiveElements": [
+        "Category filter tabs",
+        "Skill card hover transitions"
+      ],
+      "animations": [
+        "Staggered grid reveal",
+        "Card hover lift and border highlight"
+      ]
+    },
+    {
+      "id": "experience",
+      "name": "Professional Experience",
+      "description": "Verified software engineering experience timeline focusing on Maktoubteck tenure.",
+      "records": [
+        {
+          "company": "Maktoubteck",
+          "role": "Full-Stack Developer",
+          "period": "September 2025 – December 2025",
+          "focus": "Primarily backend development for advertising platform",
+          "technologies": ["Java", "Spring Boot", "React", "MySQL", "Docker"]
+        }
+      ],
+      "interactiveElements": [
+        "Experience expand details",
+        "Tech stack tags"
+      ],
+      "animations": [
+        "Timeline path reveal",
+        "Slide-in card from left"
+      ]
+    },
+    {
+      "id": "projects",
+      "name": "Verified Engineering Projects",
+      "description": "6 genuine projects with real technical stacks and architectural overviews.",
+      "projects": [
+        {
+          "id": "skillswap",
+          "name": "SkillSwap",
+          "tagline": "Skill-Exchange Platform",
+          "description": "A collaborative skill-exchange platform enabling users to match and exchange development and domain skills. Built with Spring Boot micro-services, Angular reactive client, MySQL data persistence, JWT security, and Docker containerization.",
+          "stack": ["Spring Boot", "Angular", "MySQL", "JWT", "Docker"],
+          "category": "Backend & Full-Stack",
+          "featured": true
+        },
+        {
+          "id": "localizy",
+          "name": "Localizy",
+          "tagline": "Barbershop Discovery & Booking App",
+          "description": "Mobile application for geo-located barbershop discovery, real-time slot selection, and appointment booking with intuitive mobile interactions built with React Native and Expo.",
+          "stack": ["React Native", "Expo", "JavaScript", "Mobile UX"],
+          "category": "Mobile",
+          "featured": true
+        },
+        {
+          "id": "studyflow",
+          "name": "StudyFlow",
+          "tagline": "Student Study Management Platform",
+          "description": "A student-oriented academic productivity suite managing coursework, deadlines, revision sessions, and performance tracking using Express.js REST API, Vite frontend, and SQLite.",
+          "stack": ["Express.js", "Vite", "SQLite", "Node.js"],
+          "category": "Web Apps",
+          "featured": true
+        },
+        {
+          "id": "zikoschool",
+          "name": "ZIKOSCHOOL",
+          "tagline": "Educational Web Platform",
+          "description": "Modern educational portal featuring structured course modules, teacher-student interaction, and responsive interfaces built with Next.js.",
+          "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+          "category": "Web Apps",
+          "featured": false
+        },
+        {
+          "id": "event-management",
+          "name": "Event Management System",
+          "tagline": "Enterprise Event Scheduling Suite",
+          "description": "Full-stack event organizing application supporting attendee registration, scheduling workflows, and administrative dashboards using Angular and Spring Boot.",
+          "stack": ["Angular", "Spring Boot", "Java", "REST API"],
+          "category": "Backend & Full-Stack",
+          "featured": false
+        },
+        {
+          "id": "quiz-app",
+          "name": "Quiz Application",
+          "tagline": "Dynamic Trivia Challenge",
+          "description": "Real-time quiz application communicating with the Open Trivia Database API, offering category selections, timed challenges, and score summaries in Angular.",
+          "stack": ["Angular", "TypeScript", "REST API", "CSS3"],
+          "category": "Web Apps",
+          "featured": false
+        }
+      ],
+      "interactiveElements": [
+        "Category filter tabs (All, Backend & Full-Stack, Mobile, Web Apps)",
+        "3D Tilt interaction on project cards (clamped to 4 degrees)",
+        "Deep-dive project drawer/modal with architectural details",
+        "Direct GitHub profile link button"
+      ],
+      "animations": [
+        "IntersectionObserver card stagger reveal",
+        "Image zoom on hover",
+        "Subtle card shadow shift"
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact & International Collaborations",
+      "description": "Functional contact interface with verified channels for recruiters, clients, and technical collaborators.",
+      "contactMethods": {
+        "email": "hayassine0@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/yassineha",
+        "github": "https://github.com/yassinehaa",
+        "location": "Béni Mellal, Morocco"
+      },
+      "interactiveElements": [
+        "Functional contact form with live validation and success feedback",
+        "One-click Copy Email address with toast feedback",
+        "Direct mailto: launcher",
+        "LinkedIn & GitHub profile buttons"
+      ],
+      "animations": [
+        "Form entrance slide up",
+        "Button lift and magnetic feel",
+        "Toast notification slide in"
+      ]
+    }
+  ],
+  "technicalConstraints": {
+    "scrollTrigger": "IntersectionObserver (threshold: 0.15)",
+    "noExternalAnimationLibs": true,
+    "parallaxDisabledOnMobile": true,
+    "tiltDisabledOnTouch": true,
+    "prefersReducedMotion": true,
+    "clsTarget": "< 0.1"
+  }
+}
