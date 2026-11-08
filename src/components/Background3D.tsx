@@ -1,11 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { Eye, RotateCcw, Sparkles } from 'lucide-react';
 
 export const Background3D: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
-  const [motionMode, setMotionMode] = useState<'interactive' | 'gentle'>('interactive');
-  const [wireframeGlow, setWireframeGlow] = useState(true);
 
   // Mouse & Scroll references for smooth interpolation
   const mouseRef = useRef({ x: 0, y: 0, targetX: 0, targetY: 0 });
@@ -260,8 +257,8 @@ export const Background3D: React.FC = () => {
         const floatY = Math.sin(elapsed * 1.1) * 0.18;
         const wobbleX = Math.cos(elapsed * 0.8) * 0.08;
 
-        // Interactive tilt vs gentle mode
-        const tiltIntensity = motionMode === 'interactive' ? 0.45 : 0.18;
+        // Interactive tilt
+        const tiltIntensity = 0.45;
         const targetRotY = mouseRef.current.x * tiltIntensity + (scrollRef.current.current * Math.PI * 1.2);
         const targetRotX = -mouseRef.current.y * tiltIntensity + wobbleX;
 
@@ -313,7 +310,7 @@ export const Background3D: React.FC = () => {
       ringMaterial.dispose();
       renderer.dispose();
     };
-  }, [motionMode]);
+  }, []);
 
   return (
     <div
@@ -328,18 +325,6 @@ export const Background3D: React.FC = () => {
 
       {/* Subtle Bottom Ambient Gradient Mask ensuring maximum text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#090909] via-transparent to-[#090909]/40 pointer-events-none" />
-
-      {/* Discreet 3D Motion Mode Toggle (Accessible in bottom corner) */}
-      <div className="absolute bottom-5 left-6 pointer-events-auto hidden md:flex items-center gap-2 text-[10px] font-mono text-[#a09c9a]/60 hover:text-[#f2efeb] transition-colors">
-        <button
-          onClick={() => setMotionMode(m => m === 'interactive' ? 'gentle' : 'interactive')}
-          className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#121212]/80 hover:bg-[#181818] border border-white/10 transition-all cursor-pointer backdrop-blur-sm"
-          title="Toggle 3D YH Monogram Response Mode"
-        >
-          <Sparkles className="w-3 h-3 text-[#e32b3c]" />
-          <span>3D YH: {motionMode === 'interactive' ? 'INTERACTIVE ORBIT' : 'GENTLE FLOATING'}</span>
-        </button>
-      </div>
     </div>
   );
 };
